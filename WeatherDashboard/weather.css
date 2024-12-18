@@ -1,0 +1,169 @@
+body {
+            background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Consistent card styling */
+        .card {
+            border-radius: 16px !important;
+            padding: 20px ;
+            margin-bottom: 20px;
+        }
+        th{
+            font-size: 14px !important;
+            font-weight: 800 !important;
+        }
+        /* Weather Card */
+        .weather-card {
+            background: linear-gradient(to bottom left, #5a9ff5, #3d85d1);
+            color: white;
+        }
+
+        /* Forecast Cards */
+        .forecast-card {
+            background-color: #ffffff;
+            color: #333;
+            text-align: center;
+            padding: 20px 10px 20px 10px;
+            box-shadow : none ;
+        }
+
+        /* Right Side Section */
+        .right-section {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Favorite Cities */
+        .favorite-list .list-group-item {
+            border: none;
+            background-color: #e9ecef;
+            border-radius: 8px;
+        }
+        .favorite-list .list-group-item a {
+            color: #5a9ff5;
+            text-decoration: none;
+        }
+        .favorite-list button {
+            border: none;
+            background-color: #5a9ff5;
+            color: white;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+        }
+
+        
+        .favorite-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .favorite-badge {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 14px;
+            border: 1px solid #5a9ff5;
+            border-radius: 50px;
+            color: #5a9ff5;
+            text-decoration: none;
+            background-color: white;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .favorite-badge:hover {
+            background-color: #5a9ff5;
+            color: white;
+            box-shadow: 0 4px 8px rgba(90, 159, 245, 0.3);
+        }
+
+     /* css for search bar */
+     * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Poppins, sans-serif;
+    }
+
+  
+    .search-container {
+      position: relative;
+      width: 300px;
+    }
+
+    .search-wrapper {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    .search-input {
+      width: 100%;
+      padding: 10px 35px 10px 15px; /* Space for clear button */
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .search-input:focus {
+      border-color: #5a9ff5;
+    }
+
+    .clear-btn {
+      position: absolute;
+      right: 15px;
+      background: transparent;
+      border: none;
+      font-size: 20px; /* Make the X larger */
+      cursor: pointer;
+      color: #999;
+      outline: none;
+      display: none; /* Hidden by default */
+      transition: color 0.2s;
+    }
+
+    .clear-btn:hover {
+      color: #333;
+    }
+
+    .dropdown {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        right: 0 !important;
+        background: #fff !important;
+        border: 1px solid #ddd !important;
+        border-radius: 5px !important;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1) !important;
+        max-height: 200px !important;
+        overflow-y: auto !important;
+        display: none !important; /* Hidden initially */
+        z-index: 1000 !important;
+        }
+        
+        .dropdown.show {
+        display: block !important; /* Show dropdown when triggered */
+        }
+        
+        .dropdown-item {
+        padding: 10px !important;
+        cursor: pointer !important;
+        font-size: 14px !important;
+        transition: background-color 0.2s !important;
+        }
+        
+        .dropdown-item:hover {
+        background-color: #f0f0f0 !important;
+        }
+        
+        .no-result {
+        padding: 10px !important;
+        color: #777 !important;
+        text-align: center !important;
+        }
